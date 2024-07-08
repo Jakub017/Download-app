@@ -1,8 +1,9 @@
 @extends('layouts.website.app') @section('content')
 
 <div
-    class="flex justify-center items-center gap-6 w-full max-w-screen-xl m-auto flex-col p-4 mt-4"
+    class="flex justify-center items-center gap-8 w-full max-w-screen-xl m-auto flex-col p-4 mt-24"
 >
+    <h1 class="text-3xl font-bold">Wybierz aplikację z listy lub wyszukaj</h1>
     <div class="flex w-full flex-col gap-4">
         <input
             type="text"
@@ -226,6 +227,90 @@
                 <p class="no-underline">
                     Avira Antywirus to oprogramowanie do ochrony komputerów i
                     urządzeń mobilnych przed zagrożeniami cyfrowymi.
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="flex justify-center items-center flex-col flex-wrap w-full">
+        <div class="flex gap-2 items-center justify-start w-full mb-4">
+            <div class="w-2 h-2 bg-purple-600"></div>
+            <h2 class="font-bold text-xl text-left w-full">Gry</h2>
+        </div>
+        <div class="flex w-full flex-wrap gap-4">
+            <a
+                href="https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe"
+                class="w-full max-w-96 p-4 rounded-lg border-2 border-gray-100 flex flex-col gap-1 hover:bg-slate-50 transition-all duration-200"
+            >
+                <img
+                    src="{{ asset('img/steam-logo.png') }}"
+                    alt=""
+                    class="w-12"
+                />
+                <h1 class="text-2xl font-bold no-underline">Steam</h1>
+                <p class="no-underline">
+                    Google Chrome, wymowa: – darmowa przeglądarka internetowa
+                    rozwijana przez Google.
+                </p>
+            </a>
+            <a
+                href="https://downloader.battle.net//download/getInstallerForGame?os=win&gameProgram=BATTLENET_APP&version=Live"
+                class="w-full max-w-96 p-4 rounded-lg border-2 border-gray-100 flex flex-col gap-1 hover:bg-slate-50 transition-all duration-200"
+            >
+                <img
+                    src="{{ asset('img/battlenet-logo.png') }}"
+                    alt=""
+                    class="w-12"
+                />
+                <h1 class="text-2xl font-bold no-underline">Battle.net</h1>
+                <p class="no-underline">
+                    Google Chrome, wymowa: – darmowa przeglądarka internetowa
+                    rozwijana przez Google.
+                </p>
+            </a>
+            <a
+                href="https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi"
+                class="w-full max-w-96 p-4 rounded-lg border-2 border-gray-100 flex flex-col gap-1 hover:bg-slate-50 transition-all duration-200"
+            >
+                <img
+                    src="{{ asset('img/epic-logo.webp') }}"
+                    alt=""
+                    class="w-12"
+                />
+                <h1 class="text-2xl font-bold no-underline">Epic Games</h1>
+                <p class="no-underline">
+                    Google Chrome, wymowa: – darmowa przeglądarka internetowa
+                    rozwijana przez Google.
+                </p>
+            </a>
+            <a
+                href="https://webinstallers.gog-statics.com/download/GOG_Galaxy_2.0.exe?payload=xVewk3oyHd1elpGUf-bgKObagjNPVD8GzHd22fisYe2-KLM8K9J54Hb0DGNKA1OpsP862vc1OS2IVtyxam6RhKllKP70rq2GmMFGzHkTuiFgOHVxvvXET_ygfNXxNqYmZOehVp5VaC84RhJszVGoqz-G5B-j4oDWziBqkV3SrvXoYoC2JNbLZNQ_sviRWwhy5fcGRSaT18dGTO_v2YcmEwx8-FFraMPSS9CXkh9PRP5UEIVMRsY_pAR_LJMuPIL0FGzp6jNEzidybO-4-8A5xFHMkMjcd7CMJc2NBc3ggtjnh_UBARQ-WNPGBGQcZyCknrtK0rFGmFwcG6DS9d6s_9Os7OTYbeL7fzxPWqnn_Q1EvrUA2XKMjEhjhNCDnkAS3P5qHijCGcJY9uGG2xZtigeOf7VkeoXujpdRc_Ro_gk_8epT0ajCttRkGp1eKgyDOTQ5b_2QIfUWe5VBzw5BJOgPlh70hveZQQotL0Fgi2ouEEoFMadIU8dXtQdOFEklMBmjMNV0AABJ_MZWf_ETklVPNMcZep4fPn2xBZ1javjpJ3g9SuBjsLJUoH3vJ1Y2MRn9SGCSdkpS8lm0VOO35hdPdVIhlNtDVQkXha4Fce_6wxDl5lacoNupy4fFzY_xgLcFMQNZUk3Vc9sRWeKqsWsEzzx3IaKJB28mx0G1kIH_Kv0fz4rr1XMiQRJl2dtcyaSWxBKAHDiiUdFu6oRTQgyS4fSxwmEFC2QaStK62xckinS7NjaLVxbq80DQUUXlkYyz6rYc"
+                class="w-full max-w-96 p-4 rounded-lg border-2 border-gray-100 flex flex-col gap-1 hover:bg-slate-50 transition-all duration-200"
+            >
+                <img
+                    src="{{ asset('img/gog-logo.webp') }}"
+                    alt=""
+                    class="w-12"
+                />
+                <h1 class="text-2xl font-bold no-underline">GOG Galaxy</h1>
+                <p class="no-underline">
+                    Google Chrome, wymowa: – darmowa przeglądarka internetowa
+                    rozwijana przez Google.
+                </p>
+            </a>
+
+            <a
+                href="https://origin-a.akamaihd.net/EA-Desktop-Client-Download/installer-releases/EAappInstaller.exe"
+                class="w-full max-w-96 p-4 rounded-lg border-2 border-gray-100 flex flex-col gap-1 hover:bg-slate-50 transition-all duration-200"
+            >
+                <img
+                    src="{{ asset('img/ea-logo.webp') }}"
+                    alt=""
+                    class="w-12"
+                />
+                <h1 class="text-2xl font-bold no-underline">EA App</h1>
+                <p class="no-underline">
+                    Google Chrome, wymowa: – darmowa przeglądarka internetowa
+                    rozwijana przez Google.
                 </p>
             </a>
         </div>
